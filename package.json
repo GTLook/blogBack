@@ -1,0 +1,34 @@
+{
+  "name": "ajaxBack",
+  "version": "1.0.0",
+  "description": "``` npm install ```",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js",
+    "knex": "knex",
+    "latest": "knex migrate:latest",
+    "rollback": "knex migrate:rollback"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GTLook/blogBack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GTLook/blogBack/issues"
+  },
+  "homepage": "https://github.com/GTLook/blogBack#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "knex": "^0.14.6",
+    "morgan": "^1.9.0",
+    "pg": "^7.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
