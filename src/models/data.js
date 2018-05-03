@@ -38,7 +38,7 @@ const createPost = (body) => {
 }
 
 const deletePost = (id) => {
-  const removed = data.splice(data.indexOf(blogPosts.find(ele => ele.id === id)),1)
+  const removed = blogPosts.splice(blogPosts.indexOf(blogPosts.find(ele => ele.id === id)),1)
   fs.writeFileSync(filePath,JSON.stringify(blogPosts))
   return removed
 }

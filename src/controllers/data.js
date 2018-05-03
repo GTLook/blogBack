@@ -16,7 +16,7 @@ const createPost = (request, response, next) => {
 
 const deletePost = (request, response, next) => {
   const id = request.params.id
-  const data = model.deletePost(id)
+  const data = dataModel.deletePost(id)
   response.status(200).json({ data })
 }
 
